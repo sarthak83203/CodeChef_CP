@@ -1,3 +1,18 @@
+/*Write a C program for the following scenario:
+Parent process prompts the user to enter a positive integer and it
+should create two child processes. One child process checks
+whether the number is prime and prints the result. Other child
+process calculates and prints the factorial (or an appropriate
+message if the number is too large (>20)). The parent process
+waits for both child processes to complete before exiting. Also
+print the process id and parent process id of each process
+*/
+
+
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
