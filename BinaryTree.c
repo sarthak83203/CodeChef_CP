@@ -48,13 +48,6 @@ void * inorder(struct node* root){
 
 }
 
-//Deletion Code......
-
-
-
-
-
-
 int main(){
     struct node* p=createnode(7); //root 
     struct node* p1=createnode(2); //children
