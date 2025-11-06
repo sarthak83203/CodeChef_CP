@@ -19,7 +19,7 @@ int main() {
 
     // Sort by Arrival Time (simple bubble sort)
     for (int i = 0; i < n - 1; i++) {
-        for (int j = i + 1; j < n; j++) {
+        for (int j = 0; j < n-i-1; j++) {
             if (at[i] > at[j]) {
                 // Swap all values together
                 int temp;
