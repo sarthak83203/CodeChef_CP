@@ -6,27 +6,23 @@ int main(){
     printf("Enter a Resources\n");
     scanf("%d",&m);
     int allo[n][m],max[n][m],need[n][m];
-    int available[n],safe[n],finish[n];
+    int available[m],safe[n],finish[n];
 
     //Taking input of allocation
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
-            scanf("%d",&allo[n][m]);
+            scanf("%d",&allo[i][j]);
         }
     }
     //Taking max
 
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
-            scanf("%d",&max[n][m]);
+            scanf("%d",&max[i][j]);
         }
     }
 
-     for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
-            scanf("%d",&need[n][m]);
-        }
-    }
+    
 
     for(int j=0;j<m;j++){
         scanf("%d",&available[j]);
@@ -74,7 +70,7 @@ int main(){
 
     }
     if(count==n){
-        printf("Safe");
+        printf("Safe\n");
         for(int i=0;i<n;i++){
             printf("%d ",safe[i]);
         }
